@@ -1,0 +1,95 @@
+timestamp,trace_id,file,caller_function,caller_function_id,callee_function,callee_function_id,call_depth,line,test_case
+2026-01-21T06:05:16.828139,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:16.828139,test_case_id_1,main.py,,,login,2,1,50,test_case_1
+2026-01-21T06:05:16.828139,test_case_id_1,auth.py,login,2,verify_password,3,2,25,test_case_1
+2026-01-21T06:05:16.828139,test_case_id_1,misc_func.py,verify_password,3,add_number,4,3,1,test_case_1
+2026-01-21T06:05:17.223105,test_case_id_1,auth.py,login,2,create_access_token,5,2,30,test_case_1
+2026-01-21T06:05:17.225111,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:17.246639,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:17.249596,test_case_id_1,auth.py,,,get_current_user,6,1,42,test_case_1
+2026-01-21T06:05:17.256603,test_case_id_1,main.py,,,get_my_info,7,1,60,test_case_1
+2026-01-21T06:05:17.263042,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:17.267789,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:17.277719,test_case_id_1,auth.py,,,get_current_user,6,1,42,test_case_1
+2026-01-21T06:05:17.284810,test_case_id_1,auth.py,,,get_current_user,6,1,42,test_case_1
+2026-01-21T06:05:17.284810,test_case_id_1,main.py,,,get_my_info,7,1,60,test_case_1
+2026-01-21T06:05:17.293621,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+se_1
+2026-01-21T06:05:17.302072,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:17.305080,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:17.309170,test_case_id_1,auth.py,,,get_current_user,6,1,42,test_case_1
+2026-01-21T06:05:17.313586,test_case_id_1,main.py,,,get_my_notes,8,1,93,test_case_1
+2026-01-21T06:05:17.323240,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:20.069880,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:20.077555,test_case_id_1,auth.py,,,get_current_user,6,1,42,test_case_1
+2026-01-21T06:05:20.087133,test_case_id_1,main.py,,,create_note,9,1,77,test_case_1
+2026-01-21T06:05:20.129123,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:20.130700,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:20.130700,test_case_id_1,auth.py,,,get_current_user,6,1,42,test_case_1
+2026-01-21T06:05:20.145160,test_case_id_1,main.py,,,get_my_notes,8,1,93,test_case_1
+2026-01-21T06:05:20.145160,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:23.177412,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:23.177412,test_case_id_1,auth.py,,,get_current_user,6,1,42,test_case_1
+2026-01-21T06:05:23.181833,test_case_id_1,main.py,,,delete_note,10,1,127,test_case_1
+2026-01-21T06:05:23.210839,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:23.219684,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T06:05:23.219684,test_case_id_1,auth.py,,,get_current_user,6,1,42,test_case_1
+2026-01-21T06:05:23.227900,test_case_id_1,main.py,,,get_my_notes,8,1,93,test_case_1
+2026-01-21T06:05:23.227900,test_case_id_1,auth.py,,,get_db,1,1,36,test_case_1
+2026-01-21T09:42:01.518816,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:01.520635,test_case_id_1,main.py,,,login,2,"
+    Authenticates user credentials.
+    - Verifies username and password
+    - Returns JWT access token on success
+    ",1,117,test_case_1
+2026-01-21T09:42:01.620633,test_case_id_1,auth.py,login,2,verify_password,3,,2,25,test_case_1
+2026-01-21T09:42:01.620633,test_case_id_1,misc_func.py,verify_password,3,add_number,4,,3,1,test_case_1
+2026-01-21T09:42:02.644048,test_case_id_1,auth.py,login,2,create_access_token,5,,2,30,test_case_1
+2026-01-21T09:42:02.662085,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:02.705444,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:02.712463,test_case_id_1,auth.py,,,get_current_user,6,,1,42,test_case_1
+2026-01-21T09:42:02.729727,test_case_id_1,main.py,,,get_my_info,7,"
+    Returns details of the currently authenticated user.
+    ",1,138,test_case_1
+2026-01-21T09:42:02.755266,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:02.761317,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:02.797990,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:02.797990,test_case_id_1,auth.py,,,get_current_user,6,,1,42,test_case_1
+2026-01-21T09:42:02.820571,test_case_id_1,auth.py,,,get_current_user,6,,1,42,test_case_1
+2026-01-21T09:42:02.823929,test_case_id_1,main.py,,,get_my_info,7,"
+    Returns details of the currently authenticated user.
+    ",1,138,test_case_1
+2026-01-21T09:42:02.846238,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:02.846238,test_case_id_1,main.py,,,get_my_notes,8,"
+    Retrieves all notes belonging to the current user.
+    ",1,190,test_case_1
+2026-01-21T09:42:02.882277,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:02.890891,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:02.902141,test_case_id_1,auth.py,,,get_current_user,6,,1,42,test_case_1
+2026-01-21T09:42:02.919106,test_case_id_1,main.py,,,get_my_notes,8,"
+    Retrieves all notes belonging to the current user.
+    ",1,190,test_case_1
+2026-01-21T09:42:02.936483,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:04.930524,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:04.937586,test_case_id_1,auth.py,,,get_current_user,6,,1,42,test_case_1
+2026-01-21T09:42:04.959146,test_case_id_1,main.py,,,create_note,9,"
+    Creates a new note for the authenticated user.
+    ",1,167,test_case_1
+2026-01-21T09:42:05.058474,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:05.071033,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:05.071033,test_case_id_1,auth.py,,,get_current_user,6,,1,42,test_case_1
+2026-01-21T09:42:05.091573,test_case_id_1,main.py,,,get_my_notes,8,"
+    Retrieves all notes belonging to the current user.
+    ",1,190,test_case_1
+2026-01-21T09:42:05.123395,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:08.098612,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:08.108621,test_case_id_1,auth.py,,,get_current_user,6,,1,42,test_case_1
+2026-01-21T09:42:08.120635,test_case_id_1,main.py,,,delete_note,10,"
+    Deletes a note owned by the current user.
+    ",1,237,test_case_1
+2026-01-21T09:42:08.202906,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1
+2026-01-21T09:42:08.214718,test_case_id_1,auth.py,,,get_current_user,6,,1,42,test_case_1
+2026-01-21T09:42:08.229407,test_case_id_1,main.py,,,get_my_notes,8,"
+    Retrieves all notes belonging to the current user.
+    ",1,190,test_case_1
+2026-01-21T09:42:08.249280,test_case_id_1,auth.py,,,get_db,1,,1,36,test_case_1

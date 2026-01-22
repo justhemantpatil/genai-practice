@@ -5,6 +5,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
+from misc_func import add_number
 
 from database import SessionLocal
 import models
@@ -22,6 +23,8 @@ def hash_password(password: str):
     return pwd_context.hash(password)
 
 def verify_password(plain_password, hashed_password):
+    sum = add_number()
+    print(sum)
     return pwd_context.verify(plain_password, hashed_password)
 
 def create_access_token(data: dict):
