@@ -3,6 +3,8 @@ import os
 import threading
 import csv
 from datetime import datetime
+import uuid
+
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 CSV_LOG_FILE = "function_calls.csv"
@@ -11,7 +13,6 @@ thread_local = threading.local()
 
 # ---------- Function ID Registry ----------
 FUNCTION_ID_MAP = {}
-FUNCTION_ID_COUNTER = 1
 FUNCTION_ID_LOCK = threading.Lock()
 
 
@@ -32,14 +33,27 @@ def get_function_docstring(frame):
 
 
 def get_function_id(function_name):
-    global FUNCTION_ID_COUNTER
+    """
+    Returns a stable UUID for each function name.
+    Same function -> same UUID.
+    """
+    if function_name is None:
+        return None
 
     with FUNCTION_ID_LOCK:
         if function_name not in FUNCTION_ID_MAP:
-            FUNCTION_ID_MAP[function_name] = FUNCTION_ID_COUNTER
-            FUNCTION_ID_COUNTER += 1
+            FUNCTION_ID_MAP[function_name] = str(uuid.uuid4())
         return FUNCTION_ID_MAP[function_name]
+
 # ----------------------------------------
+
+def get_function_parameter_keys(frame):
+    try:
+        arg_count = frame.f_code.co_argcount
+        return list(frame.f_code.co_varnames[:arg_count]) or None
+    except Exception:
+        return None
+
 
 def init_stack():
     if not hasattr(thread_local, "call_stack"):
@@ -60,6 +74,7 @@ def write_csv_row(row):
                 "callee_function",
                 "callee_function_id",
                 "callee_function_doc",
+                "callee_function_params",
                 "call_depth",
                 "line",
                 "test_case",
@@ -94,6 +109,7 @@ def trace_calls(frame, event, arg):
 
     callee_function_id = get_function_id(function_name)
     callee_function_doc = get_function_docstring(frame)
+    callee_function_params = get_function_parameter_keys(frame)
     caller_function_id = (
         get_function_id(caller_function) if caller_function else None
     )
@@ -109,6 +125,7 @@ def trace_calls(frame, event, arg):
         "callee_function": function_name,
         "callee_function_id": callee_function_id,
         "callee_function_doc":callee_function_doc,
+        "callee_function_params": callee_function_params,
         "call_depth": len(call_stack),
         "line": line_no,
         "test_case": "test_case_1",

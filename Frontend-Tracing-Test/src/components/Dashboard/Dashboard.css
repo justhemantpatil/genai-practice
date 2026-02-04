@@ -1,0 +1,83 @@
+.dashboard-container {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.dashboard-header h2 {
+    font-size: 1.5rem;
+    color: #a5b4fc;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+.controls-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.action-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: #334155;
+    color: white;
+}
+
+.action-btn:hover {
+    background: #475569;
+    transform: translateY(-2px);
+}
+
+.action-btn.primary {
+    background: #6366f1;
+}
+
+.action-btn.danger {
+    background: #ef4444;
+}
+
+.action-btn.success {
+    background: #22c55e;
+}
