@@ -57,3 +57,467 @@ timestamp,trace_id,file,caller_function,caller_function_id,callee_function,calle
     Retrieves all notes belonging to the current user.
     ","['db', 'current_user']",1,190,test_case_1
 2026-01-22T09:49:52.759816,test_case_id_1,auth.py,,,get_db,a6cb05f8-525c-41a7-a7bd-3c5068770cab,,,1,36,test_case_1
+2026-02-05T06:02:12.374586,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:12.382176,test_case_id_1,main.py,,,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,"
+    Authenticates user credentials.
+    - Verifies username and password
+    - Returns JWT access token on success
+    ","['data', 'db']",1,117,test_case_1
+2026-02-05T06:02:12.458012,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,,"['plain_password', 'hashed_password']",2,25,test_case_1
+2026-02-05T06:02:12.463200,test_case_id_1,misc_func.py,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,add_number,a787b27d-7d6f-4d13-bf5b-135259c8cf72,,,3,1,test_case_1
+2026-02-05T06:02:13.171574,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,create_access_token,90739d94-1030-440a-8027-d58c224800e0,,['data'],2,30,test_case_1
+2026-02-05T06:02:13.185565,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:13.209652,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:13.214758,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:02:13.225574,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:02:13.236401,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:13.238401,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:13.243859,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:02:13.261545,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:13.264553,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:02:13.269552,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:02:13.276931,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:13.283125,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:02:13.300199,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:13.303938,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:13.307513,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:02:13.313051,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:02:13.324102,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:15.559758,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:15.569174,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:02:15.576841,test_case_id_1,main.py,,,create_note,a0cd2d58-130f-45bf-a5de-605df4571e6d,"
+    Creates a new note for the authenticated user.
+    ","['note', 'db', 'current_user']",1,167,test_case_1
+2026-02-05T06:02:15.626587,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:15.632326,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:15.644423,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:02:15.644423,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:02:15.663541,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:18.644376,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:18.644376,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:02:18.658598,test_case_id_1,main.py,,,delete_note,592e6271-9db7-4d1e-87b3-20653c8f2179,"
+    Deletes a note owned by the current user.
+    ","['note_id', 'db', 'current_user']",1,237,test_case_1
+2026-02-05T06:02:18.695385,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:18.695385,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:02:18.695385,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:02:18.709370,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:02:18.725400,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:06:57.668982,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:06:57.671985,test_case_id_1,main.py,,,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,"
+    Authenticates user credentials.
+    - Verifies username and password
+    - Returns JWT access token on success
+    ","['data', 'db']",1,117,test_case_1
+2026-02-05T06:06:57.678502,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,,"['plain_password', 'hashed_password']",2,25,test_case_1
+2026-02-05T06:06:57.681515,test_case_id_1,misc_func.py,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,add_number,a787b27d-7d6f-4d13-bf5b-135259c8cf72,,,3,1,test_case_1
+2026-02-05T06:06:58.176921,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,create_access_token,90739d94-1030-440a-8027-d58c224800e0,,['data'],2,30,test_case_1
+2026-02-05T06:06:58.187396,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:06:58.206743,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:06:58.212038,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:06:58.224041,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:06:58.235008,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:06:58.238093,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:06:58.254406,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+tials', 'db']",1,42,test_case_1
+2026-02-05T06:06:58.263827,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:06:58.263827,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:06:58.272982,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:06:58.275981,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:06:58.285703,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:06:58.288216,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:06:58.291785,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:06:58.300230,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:06:58.312093,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:07:04.815851,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:07:04.817853,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:07:04.827185,test_case_id_1,main.py,,,create_note,a0cd2d58-130f-45bf-a5de-605df4571e6d,"
+    Creates a new note for the authenticated user.
+    ","['note', 'db', 'current_user']",1,167,test_case_1
+2026-02-05T06:07:04.858117,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:07:04.863205,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:07:04.863205,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:07:04.863205,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:07:04.886063,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:07:11.596255,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:07:11.601255,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:07:11.610364,test_case_id_1,main.py,,,delete_note,592e6271-9db7-4d1e-87b3-20653c8f2179,"
+    Deletes a note owned by the current user.
+    ","['note_id', 'db', 'current_user']",1,237,test_case_1
+2026-02-05T06:07:11.641550,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:07:11.641550,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:07:11.652446,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:07:11.657657,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:07:11.665748,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:08.823452,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:08.826793,test_case_id_1,main.py,,,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,"
+    Authenticates user credentials.
+    - Verifies username and password
+    - Returns JWT access token on success
+    ","['data', 'db']",1,117,test_case_1
+2026-02-05T06:16:08.839127,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,,"['plain_password', 'hashed_password']",2,25,test_case_1
+2026-02-05T06:16:08.843157,test_case_id_1,misc_func.py,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,add_number,a787b27d-7d6f-4d13-bf5b-135259c8cf72,,,3,1,test_case_1
+2026-02-05T06:16:09.460307,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,create_access_token,90739d94-1030-440a-8027-d58c224800e0,,['data'],2,30,test_case_1
+2026-02-05T06:16:09.470144,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:09.489194,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:09.491708,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:16:09.501966,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:16:09.530818,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:09.566150,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:09.576193,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:09.577195,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:16:09.583885,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:16:09.583885,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:16:09.597099,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:16:09.597099,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:09.607941,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:09.612864,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:09.616453,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:16:09.625286,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:16:09.637334,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:12.074226,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:12.080925,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:16:12.089109,test_case_id_1,main.py,,,create_note,a0cd2d58-130f-45bf-a5de-605df4571e6d,"
+    Creates a new note for the authenticated user.
+    ","['note', 'db', 'current_user']",1,167,test_case_1
+2026-02-05T06:16:12.105075,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:12.121312,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:12.126976,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:16:12.136730,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:16:12.153954,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:15.153336,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:15.153336,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:16:15.161536,test_case_id_1,main.py,,,delete_note,592e6271-9db7-4d1e-87b3-20653c8f2179,"
+    Deletes a note owned by the current user.
+    ","['note_id', 'db', 'current_user']",1,237,test_case_1
+2026-02-05T06:16:15.189237,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:15.189237,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:16:15.201981,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:16:15.206730,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:16:15.221042,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:21.995212,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:22.004022,test_case_id_1,main.py,,,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,"
+    Authenticates user credentials.
+    - Verifies username and password
+    - Returns JWT access token on success
+    ","['data', 'db']",1,117,test_case_1
+2026-02-05T06:46:22.012071,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,,"['plain_password', 'hashed_password']",2,25,test_case_1
+2026-02-05T06:46:22.018527,test_case_id_1,misc_func.py,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,add_number,a787b27d-7d6f-4d13-bf5b-135259c8cf72,,,3,1,test_case_1
+2026-02-05T06:46:22.557516,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,create_access_token,90739d94-1030-440a-8027-d58c224800e0,,['data'],2,30,test_case_1
+2026-02-05T06:46:22.568584,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:22.596502,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:22.605978,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:46:22.623448,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:46:22.678793,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:22.693820,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:22.706909,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:22.706909,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:46:22.712745,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:46:22.727718,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:46:22.727718,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:46:22.748226,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:22.748226,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:22.756293,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:22.760001,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:46:22.778319,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:46:22.791266,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:25.342724,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:25.358299,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:46:25.370376,test_case_id_1,main.py,,,create_note,a0cd2d58-130f-45bf-a5de-605df4571e6d,"
+    Creates a new note for the authenticated user.
+    ","['note', 'db', 'current_user']",1,167,test_case_1
+2026-02-05T06:46:25.405730,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:25.410570,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:25.421641,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:46:25.426722,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:46:25.448275,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:28.457506,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:28.457506,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:46:28.472049,test_case_id_1,main.py,,,delete_note,592e6271-9db7-4d1e-87b3-20653c8f2179,"
+    Deletes a note owned by the current user.
+    ","['note_id', 'db', 'current_user']",1,237,test_case_1
+2026-02-05T06:46:28.502925,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:28.508069,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:46:28.512098,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:46:28.523497,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:46:28.536091,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:17.392695,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:17.406047,test_case_id_1,main.py,,,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,"
+    Authenticates user credentials.
+    - Verifies username and password
+    - Returns JWT access token on success
+    ","['data', 'db']",1,117,test_case_1
+2026-02-05T06:47:17.414168,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,,"['plain_password', 'hashed_password']",2,25,test_case_1
+2026-02-05T06:47:17.416910,test_case_id_1,misc_func.py,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,add_number,a787b27d-7d6f-4d13-bf5b-135259c8cf72,,,3,1,test_case_1
+2026-02-05T06:47:18.007284,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,create_access_token,90739d94-1030-440a-8027-d58c224800e0,,['data'],2,30,test_case_1
+2026-02-05T06:47:18.014099,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:18.042735,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:18.053587,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:47:18.064614,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:47:18.076921,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:18.084639,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:18.089077,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:47:18.112125,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:18.112125,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:47:18.123985,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:47:18.124982,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:18.140826,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:47:18.148876,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:18.168731,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:18.173831,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:47:18.189995,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:47:18.207240,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:20.920490,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:20.928876,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:47:20.940075,test_case_id_1,main.py,,,create_note,a0cd2d58-130f-45bf-a5de-605df4571e6d,"
+    Creates a new note for the authenticated user.
+    ","['note', 'db', 'current_user']",1,167,test_case_1
+2026-02-05T06:47:20.989817,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:21.001237,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:21.001749,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:47:21.016616,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:47:21.026799,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:24.065603,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:24.071423,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:47:24.082276,test_case_id_1,main.py,,,delete_note,592e6271-9db7-4d1e-87b3-20653c8f2179,"
+    Deletes a note owned by the current user.
+    ","['note_id', 'db', 'current_user']",1,237,test_case_1
+2026-02-05T06:47:24.108640,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:24.117680,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:47:24.119039,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:47:24.126724,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:47:24.136318,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:48.196769,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:48.201109,test_case_id_1,main.py,,,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,"
+    Authenticates user credentials.
+    - Verifies username and password
+    - Returns JWT access token on success
+    ","['data', 'db']",1,117,test_case_1
+2026-02-05T06:50:48.208258,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,,"['plain_password', 'hashed_password']",2,25,test_case_1
+2026-02-05T06:50:48.210256,test_case_id_1,misc_func.py,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,add_number,a787b27d-7d6f-4d13-bf5b-135259c8cf72,,,3,1,test_case_1
+2026-02-05T06:50:48.882215,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,create_access_token,90739d94-1030-440a-8027-d58c224800e0,,['data'],2,30,test_case_1
+2026-02-05T06:50:48.893215,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:48.914075,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:48.916225,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:50:48.925199,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:50:48.940236,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:48.947717,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:48.968720,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:48.967715,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:50:48.979080,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:50:48.982084,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:50:48.990111,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:50:48.997668,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:49.010241,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:49.011707,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:49.015723,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:50:49.024825,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:50:49.034374,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:52.122502,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:52.127204,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:50:52.140907,test_case_id_1,main.py,,,create_note,a0cd2d58-130f-45bf-a5de-605df4571e6d,"
+    Creates a new note for the authenticated user.
+    ","['note', 'db', 'current_user']",1,167,test_case_1
+2026-02-05T06:50:52.176855,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:52.185560,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:52.195489,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:50:52.212443,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:50:52.232836,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:55.197802,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:55.207735,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:50:55.210052,test_case_id_1,main.py,,,delete_note,592e6271-9db7-4d1e-87b3-20653c8f2179,"
+    Deletes a note owned by the current user.
+    ","['note_id', 'db', 'current_user']",1,237,test_case_1
+2026-02-05T06:50:55.233397,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:55.240566,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:50:55.244541,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:50:55.246727,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:50:55.259930,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:41.292574,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:41.297385,test_case_id_1,main.py,,,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,"
+    Authenticates user credentials.
+    - Verifies username and password
+    - Returns JWT access token on success
+    ","['data', 'db']",1,117,test_case_1
+2026-02-05T06:51:41.305006,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,,"['plain_password', 'hashed_password']",2,25,test_case_1
+2026-02-05T06:51:41.308020,test_case_id_1,misc_func.py,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,add_number,a787b27d-7d6f-4d13-bf5b-135259c8cf72,,,3,1,test_case_1
+2026-02-05T06:51:41.986117,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,create_access_token,90739d94-1030-440a-8027-d58c224800e0,,['data'],2,30,test_case_1
+2026-02-05T06:51:41.992717,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:42.015351,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:42.018802,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:51:42.028452,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:51:42.040260,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:42.044292,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:42.068561,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:42.066551,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:51:42.084340,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:51:42.094281,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:51:42.096134,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:51:42.200339,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:42.214476,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:42.215479,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:42.220929,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:51:42.232233,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:51:42.259081,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:45.272587,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:45.279789,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:51:45.292403,test_case_id_1,main.py,,,create_note,a0cd2d58-130f-45bf-a5de-605df4571e6d,"
+    Creates a new note for the authenticated user.
+    ","['note', 'db', 'current_user']",1,167,test_case_1
+2026-02-05T06:51:45.332268,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:45.344636,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:45.348673,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:51:45.362474,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:51:45.380737,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:48.514092,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:48.524383,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:51:48.542846,test_case_id_1,main.py,,,delete_note,592e6271-9db7-4d1e-87b3-20653c8f2179,"
+    Deletes a note owned by the current user.
+    ","['note_id', 'db', 'current_user']",1,237,test_case_1
+2026-02-05T06:51:48.574617,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:48.593107,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:51:48.599069,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:51:48.629617,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:51:48.656670,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.178897,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.186891,test_case_id_1,main.py,,,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,"
+    Authenticates user credentials.
+    - Verifies username and password
+    - Returns JWT access token on success
+    ","['data', 'db']",1,117,test_case_1
+2026-02-05T06:53:44.196041,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,,"['plain_password', 'hashed_password']",2,25,test_case_1
+2026-02-05T06:53:44.200491,test_case_id_1,misc_func.py,verify_password,5f8ed3a0-df26-45fb-a957-d3271b187ffa,add_number,a787b27d-7d6f-4d13-bf5b-135259c8cf72,,,3,1,test_case_1
+2026-02-05T06:53:44.823495,test_case_id_1,auth.py,login,4119a3b3-de0f-44f3-85a6-7cb665f54e6e,create_access_token,90739d94-1030-440a-8027-d58c224800e0,,['data'],2,30,test_case_1
+2026-02-05T06:53:44.835511,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.863619,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.869796,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:53:44.878076,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:53:44.887272,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.893996,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.915464,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:53:44.925412,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.932149,test_case_id_1,main.py,,,get_my_info,19c7cacd-9526-47a1-b034-24f3bee34e68,"
+    Returns details of the currently authenticated user.
+    ",['current_user'],1,138,test_case_1
+2026-02-05T06:53:44.939907,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:53:44.960809,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.965134,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:53:44.990147,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.990147,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:44.998712,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:53:45.008780,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:53:45.026663,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:47.939755,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:47.942912,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:53:47.955929,test_case_id_1,main.py,,,create_note,a0cd2d58-130f-45bf-a5de-605df4571e6d,"
+    Creates a new note for the authenticated user.
+    ","['note', 'db', 'current_user']",1,167,test_case_1
+2026-02-05T06:53:47.990314,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:48.001132,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:48.004761,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:53:48.014475,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:53:48.027051,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:51.187029,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:51.193439,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:53:51.211156,test_case_id_1,main.py,,,delete_note,592e6271-9db7-4d1e-87b3-20653c8f2179,"
+    Deletes a note owned by the current user.
+    ","['note_id', 'db', 'current_user']",1,237,test_case_1
+2026-02-05T06:53:51.299146,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:51.300146,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1
+2026-02-05T06:53:51.307677,test_case_id_1,auth.py,,,get_current_user,78683d33-f2e9-4df1-a008-6718d2a1dc73,,"['credentials', 'db']",1,42,test_case_1
+2026-02-05T06:53:51.326169,test_case_id_1,main.py,,,get_my_notes,f2535291-da90-4ebc-aef5-61f70157f586,"
+    Retrieves all notes belonging to the current user.
+    ","['db', 'current_user']",1,190,test_case_1
+2026-02-05T06:53:51.353738,test_case_id_1,auth.py,,,get_db,02c8dbdd-f4b9-4b8d-b2f2-d30edacf0fcb,,,1,36,test_case_1

@@ -1,0 +1,6 @@
+Timestamp,Caller_Function,Callee_Function,Caller_UUID,Callee_UUID,File,Component
+2026-02-04T15:14:00Z,,App,,uuid-app-123,App.jsx,App
+2026-02-04T15:14:01Z,,Dashboard,,uuid-dashboard-456,Dashboard.jsx,Dashboard
+2026-02-04T15:14:02Z,App,handleMagicGlow,uuid-app-123,uuid-handleMagicGlow-789,App.jsx,App
+2026-02-04T15:14:03Z,Dashboard,handleRefreshData,uuid-dashboard-456,uuid-handleRefreshData-101,Dashboard.jsx,Dashboard
+2026-02-04T15:14:04Z,handleRefreshData,handleCalculateStats,uuid-handleRefreshData-101,uuid-handleCalculateStats-202,Dashboard.jsx,Dashboard

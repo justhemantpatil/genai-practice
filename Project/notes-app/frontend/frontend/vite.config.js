@@ -1,16 +1,16 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import uiTracePlugin from "../babel-plugins/ui-trace-plugin.js";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import autoTracePlugin from './auto-trace-plugin.js'
+import saveTracePlugin from './save-trace-plugin.js'
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: [
-          // Enable tracing: Always enable for now to test
-          uiTracePlugin
-        ]
-      }
-    })
-  ]
-});
+        plugins: [autoTracePlugin],
+      },
+    }),
+    saveTracePlugin()
+  ],
+})

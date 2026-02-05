@@ -1,0 +1,15 @@
+Timestamp,Caller_Function,Callee_Function,Caller_UUID,Callee_UUID,File,Component
+2026-02-05T06:29:08.225Z,,App,,73b3b45d-d3de-489c-baaf-d9ce2b75defe,App.jsx,App
+2026-02-05T06:29:08.231Z,,Dashboard,,6789f7d9-3d33-400d-90e8-e6d3a538e81d,Dashboard.jsx,Dashboard
+2026-02-05T06:29:08.234Z,,NetworkPanel,,445a7ce6-5d14-40d5-b06e-3be5ed246c3a,NetworkPanel.jsx,NetworkPanel
+2026-02-05T06:29:08.237Z,,AsyncPanel,,d713fd68-a43e-4875-b85a-3f267ccdef07,AsyncPanel.jsx,AsyncPanel
+2026-02-05T06:29:10.226Z,App,handleMagicGlow,73b3b45d-d3de-489c-baaf-d9ce2b75defe,92d6b91f-91cb-42d3-9e33-265ff3eb1f9c,App.jsx,App
+2026-02-05T06:29:10.228Z,,App,,73b3b45d-d3de-489c-baaf-d9ce2b75defe,App.jsx,App
+2026-02-05T06:29:11.316Z,App,handleSystemAlert,73b3b45d-d3de-489c-baaf-d9ce2b75defe,b1d5cd8c-47bc-4cb4-8eba-4b26f45a8a67,App.jsx,App
+2026-02-05T06:29:11.317Z,,App,,73b3b45d-d3de-489c-baaf-d9ce2b75defe,App.jsx,App
+2026-02-05T06:29:12.419Z,Dashboard,handleRefreshData,6789f7d9-3d33-400d-90e8-e6d3a538e81d,5980b5fa-2ef6-4e19-b26f-35c6d8556f05,Dashboard.jsx,Dashboard
+2026-02-05T06:29:12.419Z,,Dashboard,,6789f7d9-3d33-400d-90e8-e6d3a538e81d,Dashboard.jsx,Dashboard
+2026-02-05T06:29:12.931Z,handleRefreshData,handleCalculateStats,5980b5fa-2ef6-4e19-b26f-35c6d8556f05,61af2724-a0a3-4259-bd60-6871c3f74fce,Dashboard.jsx,Dashboard
+2026-02-05T06:29:12.932Z,,Dashboard,,6789f7d9-3d33-400d-90e8-e6d3a538e81d,Dashboard.jsx,Dashboard
+2026-02-05T06:29:13.505Z,Dashboard,handleUploadLogs,6789f7d9-3d33-400d-90e8-e6d3a538e81d,8f017574-7809-4095-9bee-1c58f33c992d,Dashboard.jsx,Dashboard
+2026-02-05T06:29:13.505Z,,Dashboard,,6789f7d9-3d33-400d-90e8-e6d3a538e81d,Dashboard.jsx,Dashboard

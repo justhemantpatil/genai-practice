@@ -46,8 +46,11 @@ export function trace(fn, fnName, fileName, componentName, lexicalParent) {
     };
 }
 
-function exportLogs() {
-    if (logs.length === 0) return;
+export function exportLogs() {
+    if (logs.length === 0) {
+        console.warn('[Trace] No logs to export');
+        return Promise.resolve(false);
+    }
 
     const headers = [
         "Timestamp",
@@ -72,11 +75,44 @@ function exportLogs() {
     const csvContent = [headers.join(","), ...rows].join("\n");
 
     if (import.meta.env.DEV) {
-        navigator.sendBeacon('/__save-trace', csvContent);
+        console.log(`[Trace] Exporting ${logs.length} logs via sendBeacon`);
+        
+        // Use sendBeacon for async send
+        const sent = navigator.sendBeacon('/__save-trace', csvContent);
+        
+        if (sent) {
+            console.log('[Trace] Beacon sent successfully');
+        } else {
+            console.error('[Trace] Beacon failed, trying fetch as fallback');
+            // Fallback to fetch if sendBeacon fails
+            return fetch('/__save-trace', {
+                method: 'POST',
+                body: csvContent,
+                keepalive: true
+            }).then(() => {
+                console.log('[Trace] Saved via fetch');
+                return true;
+            }).catch(err => {
+                console.error('[Trace] Failed to save:', err);
+                return false;
+            });
+        }
+        return Promise.resolve(sent);
     } else {
         console.warn("Tracing save is only supported in Dev mode with local server.");
+        return Promise.resolve(false);
     }
+}
+
+export function getLogCount() {
+    return logs.length;
 }
 
 // Auto-export on app close / refresh
 window.addEventListener("beforeunload", exportLogs);
+
+// Make exportLogs available globally for Selenium tests
+if (typeof window !== 'undefined') {
+    window.__exportTraceLogs = exportLogs;
+    window.__getTraceLogCount = getLogCount;
+}

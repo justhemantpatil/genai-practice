@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard/Dashboard';
+import NetworkPanel from './components/NetworkPanel/NetworkPanel';
+import AsyncPanel from './components/AsyncPanel/AsyncPanel';
 import './App.css'
 
 function App() {
@@ -74,6 +76,8 @@ function App() {
       </div>
 
       <Dashboard />
+      <NetworkPanel />
+      <AsyncPanel />
     </main>
   )
 }
