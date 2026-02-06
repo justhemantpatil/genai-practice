@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Dashboard from './components/Dashboard/Dashboard';
 import NetworkPanel from './components/NetworkPanel/NetworkPanel';
 import AsyncPanel from './components/AsyncPanel/AsyncPanel';
+import NotesApp from './components/NotesApp/NotesApp';
 import './App.css'
 
 function App() {
@@ -75,6 +76,7 @@ function App() {
         {status}
       </div>
 
+      <NotesApp />
       <Dashboard />
       <NetworkPanel />
       <AsyncPanel />
