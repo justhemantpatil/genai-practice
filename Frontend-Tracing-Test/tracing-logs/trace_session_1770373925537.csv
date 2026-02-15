@@ -1,0 +1,9 @@
+Timestamp,Caller_Function,Callee_Function,Caller_UUID,Callee_UUID,File,Component
+2026-02-06T07:10:29.104Z,,App,,ea0d60a9-57e1-412f-af90-998319dd4fff,App.jsx,App
+2026-02-06T07:10:29.128Z,,NotesApp,,7ef98e2e-c2dc-41f1-b2a8-5139aeeaca58,NotesApp.jsx,NotesApp
+2026-02-06T07:10:29.132Z,,Dashboard,,996908ee-c31f-4c5b-8bf6-e335238ab13b,Dashboard.jsx,Dashboard
+2026-02-06T07:10:29.142Z,,NetworkPanel,,0d21b865-3d9e-45de-a6dd-cb0d0e735bce,NetworkPanel.jsx,NetworkPanel
+2026-02-06T07:10:29.157Z,,AsyncPanel,,3312de3a-6510-43d9-827e-a7bb6c36b3a4,AsyncPanel.jsx,AsyncPanel
+2026-02-06T07:10:31.481Z,NotesApp,handleFetchNotes,7ef98e2e-c2dc-41f1-b2a8-5139aeeaca58,62070f62-8547-4256-a02d-19781213c054,NotesApp.jsx,NotesApp
+2026-02-06T07:10:31.484Z,,NotesApp,,7ef98e2e-c2dc-41f1-b2a8-5139aeeaca58,NotesApp.jsx,NotesApp
+2026-02-06T07:10:32.153Z,,NotesApp,,7ef98e2e-c2dc-41f1-b2a8-5139aeeaca58,NotesApp.jsx,NotesApp

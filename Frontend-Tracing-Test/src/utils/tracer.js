@@ -1,5 +1,6 @@
 const logs = [];
 const functionUUIDs = {}; // Maps function names to their persistent UUIDs
+let currentExecutionContext = null;
 
 function generateUUID() {
     if (typeof crypto !== 'undefined' && crypto.randomUUID) {
@@ -16,6 +17,37 @@ function getOrCreateUUID(functionName) {
     return functionUUIDs[functionName];
 }
 
+
+
+/* -------------------------------
+   HTTP instrumentation (fetch)
+-------------------------------- */
+
+(function instrumentFetch() {
+    if (!window.fetch) return;
+
+    const originalFetch = window.fetch;
+
+    window.fetch = async function (input, init = {}) {
+        const method = (init.method || 'GET').toUpperCase();
+        const url =
+            typeof input === 'string'
+                ? input
+                : input && input.url
+                ? input.url
+                : '';
+
+        if (currentExecutionContext && logs.length > 0) {
+            const lastLog = logs[logs.length - 1];
+            lastLog.http_method = method;
+            lastLog.http_url = url;
+        }
+
+        return originalFetch.apply(this, arguments);
+    };
+})();
+
+
 /**
  * Wraps a function to log its execution context with Caller/Callee info.
  * @param {Function} fn - The actual function to execute
@@ -28,6 +60,12 @@ export function trace(fn, fnName, fileName, componentName, lexicalParent) {
     return function (...args) {
         // lexicalParent is the parent function (CALLER - where this function is defined)
         // fnName is this function (CALLEE - the function being called)
+        currentExecutionContext = {
+            fnName,
+            lexicalParent,
+            fileName,
+            componentName
+        };
 
         const logEntry = {
             timestamp: new Date().toISOString(),
@@ -36,13 +74,19 @@ export function trace(fn, fnName, fileName, componentName, lexicalParent) {
             caller_uuid: getOrCreateUUID(lexicalParent),
             callee_uuid: getOrCreateUUID(fnName),
             file: fileName || 'unknown',
-            component: componentName || 'unknown'
+            component: componentName || 'unknown',
+            http_method: '',
+            http_url: ''
         };
 
         logs.push(logEntry);
         console.log(`[Trace] ${lexicalParent || '(root)'} -> ${fnName}`);
 
-        return fn.apply(this, args);
+        try {
+            return fn.apply(this, args);
+        } finally {
+            currentExecutionContext = null;
+        }
     };
 }
 
@@ -56,7 +100,9 @@ function exportLogs() {
         "Caller_UUID",
         "Callee_UUID",
         "File",
-        "Component"
+        "Component",
+        "HTTP_Method",
+        "HTTP_URL"
     ];
 
     const rows = logs.map(log => [
@@ -66,9 +112,12 @@ function exportLogs() {
         log.caller_uuid,
         log.callee_uuid,
         log.file,
-        log.component
-    ].join(","));
-
+        log.component,
+        log.http_method,
+        log.http_url
+    ].map(v => `"${String(v || '').replace(/"/g, '""')}"`)
+    .join(",")
+    );
     const csvContent = [headers.join(","), ...rows].join("\n");
 
     if (import.meta.env.DEV) {

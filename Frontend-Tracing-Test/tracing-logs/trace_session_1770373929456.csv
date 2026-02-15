@@ -1,0 +1,9 @@
+Timestamp,Caller_Function,Callee_Function,Caller_UUID,Callee_UUID,File,Component,HTTP_Method,HTTP_URL
+"2026-02-06T10:32:05.707Z","","App","","831b5957-ad86-42a8-9b62-a1d28dfcede2","App.jsx","App","",""
+"2026-02-06T10:32:05.714Z","","NotesApp","","4337d43f-457b-4148-81b4-d79b8890d7d5","NotesApp.jsx","NotesApp","",""
+"2026-02-06T10:32:05.716Z","","Dashboard","","61d8ee74-0451-427f-83d6-5ce36d7e09df","Dashboard.jsx","Dashboard","",""
+"2026-02-06T10:32:05.718Z","","NetworkPanel","","299f6c38-d7e1-4d35-a9da-b1620281ef5c","NetworkPanel.jsx","NetworkPanel","",""
+"2026-02-06T10:32:05.721Z","","AsyncPanel","","f7f31f44-7c76-4b09-9c7d-c8ced61b7884","AsyncPanel.jsx","AsyncPanel","",""
+"2026-02-06T10:32:05.734Z","NotesApp","handleFetchNotes","4337d43f-457b-4148-81b4-d79b8890d7d5","9e1ca74f-c01b-4986-99a2-188d68700a2e","NotesApp.jsx","NotesApp","GET","http://localhost:8000/api/notes/"
+"2026-02-06T10:32:05.743Z","","NotesApp","","4337d43f-457b-4148-81b4-d79b8890d7d5","NotesApp.jsx","NotesApp","",""
+"2026-02-06T10:32:06.066Z","","NotesApp","","4337d43f-457b-4148-81b4-d79b8890d7d5","NotesApp.jsx","NotesApp","",""

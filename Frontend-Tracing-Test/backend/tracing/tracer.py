@@ -5,22 +5,52 @@ import csv
 from datetime import datetime
 import uuid
 
+# ----------------------------------------
+# Project root (adjust if needed)
+# ----------------------------------------
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
-CSV_LOG_FILE = "function_calls.csv"
 
 thread_local = threading.local()
 
-# ---------- Function ID Registry ----------
+# ----------------------------------------
+# Function ID Registry
+# ----------------------------------------
+
 FUNCTION_ID_MAP = {}
 FUNCTION_ID_LOCK = threading.Lock()
 
+# ----------------------------------------
+# Test case name resolution (KEY PART)
+# ----------------------------------------
+
+def get_test_case_name():
+    """
+    Automatically derive test case name from the executing test file.
+    Example:
+      tests/test_network_async_interaction.py
+      -> test_network_async_interaction
+    """
+    try:
+        main_module = sys.modules.get("__main__")
+        if main_module and hasattr(main_module, "__file__"):
+            return os.path.splitext(os.path.basename(main_module.__file__))[0]
+    except Exception:
+        pass
+
+    return "unknown_test"
+
+def get_csv_log_file():
+    test_case = get_test_case_name()
+    log_dir = os.path.join(PROJECT_ROOT, "tracing-logs")
+    os.makedirs(log_dir, exist_ok=True)
+    return os.path.join(log_dir, f"{test_case}.csv")
+
+# ----------------------------------------
+# Helpers
+# ----------------------------------------
 
 def get_function_docstring(frame):
-    """
-    Safely extracts docstring of the function being executed.
-    Returns None if not found.
-    """
     try:
         func_name = frame.f_code.co_name
         func_obj = frame.f_globals.get(func_name)
@@ -28,15 +58,9 @@ def get_function_docstring(frame):
             return func_obj.__doc__
     except Exception:
         pass
-
     return None
 
-
 def get_function_id(function_name):
-    """
-    Returns a stable UUID for each function name.
-    Same function -> same UUID.
-    """
     if function_name is None:
         return None
 
@@ -45,8 +69,6 @@ def get_function_id(function_name):
             FUNCTION_ID_MAP[function_name] = str(uuid.uuid4())
         return FUNCTION_ID_MAP[function_name]
 
-# ----------------------------------------
-
 def get_function_parameter_keys(frame):
     try:
         arg_count = frame.f_code.co_argcount
@@ -54,20 +76,24 @@ def get_function_parameter_keys(frame):
     except Exception:
         return None
 
-
 def init_stack():
     if not hasattr(thread_local, "call_stack"):
         thread_local.call_stack = []
 
-def write_csv_row(row):
-    file_exists = os.path.isfile(CSV_LOG_FILE)
+# ----------------------------------------
+# CSV Writer
+# ----------------------------------------
 
-    with open(CSV_LOG_FILE, "a", newline="", encoding="utf-8") as f:
+def write_csv_row(row):
+    csv_file = get_csv_log_file()
+    file_exists = os.path.isfile(csv_file)
+
+    with open(csv_file, "a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
             fieldnames=[
                 "timestamp",
-                "trace_id",
+                "test_case",
                 "file",
                 "caller_function",
                 "caller_function_id",
@@ -77,7 +103,6 @@ def write_csv_row(row):
                 "callee_function_params",
                 "call_depth",
                 "line",
-                "test_case",
             ],
         )
 
@@ -86,11 +111,16 @@ def write_csv_row(row):
 
         writer.writerow(row)
 
+# ----------------------------------------
+# Core tracer
+# ----------------------------------------
+
 def trace_calls(frame, event, arg):
     if event != "call":
         return trace_calls
 
     file_path = frame.f_code.co_filename
+
     if (
         not file_path.startswith(PROJECT_ROOT)
         or "tracing" in file_path
@@ -107,28 +137,20 @@ def trace_calls(frame, event, arg):
     call_stack = thread_local.call_stack
     caller_function = call_stack[-1] if call_stack else None
 
-    callee_function_id = get_function_id(function_name)
-    callee_function_doc = get_function_docstring(frame)
-    callee_function_params = get_function_parameter_keys(frame)
-    caller_function_id = (
-        get_function_id(caller_function) if caller_function else None
-    )
-
     call_stack.append(function_name)
 
     log_row = {
         "timestamp": datetime.utcnow().isoformat(),
-        "trace_id": "test_case_id_1",
+        "test_case": get_test_case_name(),
         "file": file_name,
         "caller_function": caller_function,
-        "caller_function_id": caller_function_id,
+        "caller_function_id": get_function_id(caller_function),
         "callee_function": function_name,
-        "callee_function_id": callee_function_id,
-        "callee_function_doc":callee_function_doc,
-        "callee_function_params": callee_function_params,
+        "callee_function_id": get_function_id(function_name),
+        "callee_function_doc": get_function_docstring(frame),
+        "callee_function_params": get_function_parameter_keys(frame),
         "call_depth": len(call_stack),
         "line": line_no,
-        "test_case": "test_case_1",
     }
 
     write_csv_row(log_row)
@@ -139,6 +161,10 @@ def trace_calls(frame, event, arg):
         return trace_returns
 
     return trace_returns
+
+# ----------------------------------------
+# Enable tracing
+# ----------------------------------------
 
 def enable_tracing():
     sys.settrace(trace_calls)
